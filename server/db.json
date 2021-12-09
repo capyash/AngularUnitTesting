@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "First Post",
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "title": "Second Post",
+      "authorId": 1
+    },
+    {
+      "id": 2,
+      "title": "Third Post",
+      "authorId": 1
+    },
+    {
+      "title": "Fourth",
+      "authorId": 1,
+      "id": 3
+    },
+    {
+      "title": "NEWEW",
+      "authorId": 1,
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profiles": [
+    {
+      "id": 1,
+      "name": "Yash"
+    }
+  ]
+}
