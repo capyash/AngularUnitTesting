@@ -11,7 +11,6 @@ import { PostService } from 'src/app/services/post.service';
 })
 export class PostDetailComponent implements OnInit, OnDestroy {
   constructor(
-    public router: Router,
     public activedRoute: ActivatedRoute,
     public postService: PostService
   ) {}

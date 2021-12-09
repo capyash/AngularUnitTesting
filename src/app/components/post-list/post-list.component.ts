@@ -62,7 +62,7 @@ export class PostListComponent implements OnInit, OnDestroy {
   }
 
   public createPost(): void {
-    this.newPostForm.markAsDirty();
+    this.newPostForm.markAllAsTouched();
     if (this.newPostForm.valid) {
       this.postService
         .createPost(this.newPostForm.value)
@@ -76,7 +76,6 @@ export class PostListComponent implements OnInit, OnDestroy {
         )
         .subscribe();
     } else {
-      console.log(this.newPostForm);
     }
   }
 

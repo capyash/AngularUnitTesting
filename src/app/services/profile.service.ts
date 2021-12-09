@@ -17,7 +17,7 @@ export class ProfileService {
     return this.apiService.httpGet<Profile>(`profile/${id}`);
   }
 
-  public setProfile(profile: Partial<Profile>): Observable<boolean> {
+  public createProfile(profile: Partial<Profile>): Observable<boolean> {
     return this.apiService
       .httpPost<Profile>('posts', profile)
       .pipe(map((res: Profile) => (res ? true : false)));
